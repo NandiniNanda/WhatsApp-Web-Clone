@@ -6,14 +6,14 @@
     <meta name="theme-color" content="#054740">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp Clone -- One-To-One Communication</title>
-    <link rel="stylesheet" href="../css/design.css">
+    <link rel="stylesheet" href="design.css">
     <link rel="shortcut icon" href="https://whatsapp.com/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="login-page">
         <img src="https://logos-world.net/wp-content/uploads/2020/05/WhatsApp-Emblem.png" alt="" class="whatsapp-logo">
-        <img src="../images/sign in with google.png" alt="" class="logIn-btn">
+        <img src="./images/sign in with google.png" alt="" class="logIn-btn">
     </div>
     <div class="container">
         <div class="sidebar">
@@ -22,8 +22,8 @@
                 <img src="https://media-exp1.licdn.com/dms/image/C5603AQFySN0ieZxyPA/profile-displayphoto-shrink_100_100/0?e=1604534400&v=beta&t=7HZaHUTsz2q_9gdK5JMeEeC3J8cQNd9jj9_bLM3gxP4"
                     class="my-profile-picture">
                 <div class="header-stuff">
-                    <img src="../images/message-btn.png" alt="" class="create-message">
-                    <img src="../images/menu-btn.png" alt="" class="menu-btn">
+                    <img src="./images/message-btn.png" alt="" class="create-message">
+                    <img src="./images/menu-btn.png" alt="" class="menu-btn">
                 </div>
                 <div class="menu closed">
                     <div class="theme-toggle">Dark Theme</div>
@@ -31,14 +31,14 @@
                 </div>
             </div>
             <div class="search-box">
-                <img src="../images/search-btn.png" alt="" class="search-btn">
+                <img src="./images/search-btn.png" alt="" class="search-btn">
                 <input type="text" placeholder="Search People" class="search">
             </div>
             <div class="chats"></div>
         </div>
         <div class="chat-box">
             <div class="chat-header">
-                <img src="./go-back.png" alt="" class="back-btn">
+                <img src="./images/go-back.png" alt="" class="back-btn">
                 <img src="https://media-exp1.licdn.com/dms/image/C5603AQFySN0ieZxyPA/profile-displayphoto-shrink_100_100/0?e=1604534400&v=beta&t=7HZaHUTsz2q_9gdK5JMeEeC3J8cQNd9jj9_bLM3gxP4"
                     alt="" class="profile-picture">
                 <div class="chat-info">
@@ -49,9 +49,9 @@
             <div class="chat-body-bg"></div>
             <div class="chat-body"></div>
             <div class="chat-footer">
-                <img src="./emoji.png" alt="" class="emoji">
+                <img src="./images/emoji.png" alt="" class="emoji">
                 <input type="text" class="text-input" placeholder="Type a message">
-                <img src="./mic.png" alt="" class="mic">
+                <img src="./images/mic.png" alt="" class="mic">
             </div>
         </div>
     </div>
@@ -62,26 +62,23 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
+    <script>
         // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyDeYrYAKxcSm73xJao3ORLcsqBKOKrOkxU",
-          authDomain: "whatsapp-web-clone-733dd.firebaseapp.com",
-          projectId: "whatsapp-web-clone-733dd",
-          storageBucket: "whatsapp-web-clone-733dd.appspot.com",
-          messagingSenderId: "8664255220",
-          appId: "1:8664255220:web:7f3ce5768de20ff413aca1"
+        var firebaseConfig = {
+            apiKey: "AIzaSyCFQsM7jg7OnsTHNKp_pxJojFjzo8Vnby0",
+            authDomain: "app-clones.firebaseapp.com",
+            databaseURL: "https://app-clones.firebaseio.com",
+            projectId: "app-clones",
+            storageBucket: "app-clones.appspot.com",
+            messagingSenderId: "513139469670",
+            appId: "1:513139469670:web:33233d8b552307848beca7",
+            measurementId: "G-7HQSH2K08N"
         };
-      
         // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-      </script>
-    <script src="../app.js"></script>
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
